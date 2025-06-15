@@ -2,7 +2,7 @@ import React from 'react'
 import heroImg from '/assets/header.jpg';
 
 const Header = () => {
-    const mobileNumber = +919876543212;
+    const mobileNumber = +917861045443;
     return (
         <div id='homeHeader' className="homeHeader">
             <div className="background">

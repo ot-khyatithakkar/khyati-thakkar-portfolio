@@ -2,8 +2,8 @@ import logo from '/assets/logo.png'
 import { Element, Link } from 'react-scroll';
 
 const Footer = () => {
-    const mobileNumber = +919876543212;
-    const mailId = 'jay@gmail.com';
+    const mobileNumber = +917861045443;
+    const mailId = 'otbydrkhyati01@gmail.com';
     return (
         <Element name="about-us" className="footerContainer">
             <div className="footer">
@@ -43,6 +43,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="socialIcons">
+                        <a href='https://maps.app.goo.gl/YeCPXqvidc2JmBQu7' target="_blank" rel="noreferrer" className="icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </a>
                         <a href={`tel:${mobileNumber}`} target="_blank" rel="noreferrer" className="icon">
                             <ion-icon name="call-outline"></ion-icon>
                         </a>
