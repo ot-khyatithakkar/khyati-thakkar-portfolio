@@ -1,0 +1,300 @@
+@import "./global.scss";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  position: relative;
+  padding: 0 100px;
+  padding-top: 0;
+  width: 100%;
+
+  .projectContainer {
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    // border: 2px solid red;
+
+    .leftContainer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .description {
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        // border-left: 8px solid rgb(0, 0, 0);
+        padding: 0;
+        // padding-left: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .rightContainer {
+      width: 600px;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      > .images {
+        height: 400px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: 0;
+
+        img {
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .projects {
+    padding: 0 100px;
+
+    .projectContainer {
+      .leftContainer {
+        .description {
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+    padding: 0 50px;
+    padding-top: 0;
+    width: 100%;
+
+    .projectContainer {
+      // border: 2px solid red;
+      width: 100%;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      position: relative;
+
+      .leftContainer {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .description {
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .title {
+          font-size:24px;
+          font-weight: 700;
+          padding: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      .rightContainer {
+        width: 45%;
+        // border: 2px solid red;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        > .images {
+          height: fit-content;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          overflow: auto;
+          scrollbar-width: 0;
+
+          img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+    padding: 0 50px;
+    padding-top: 0;
+    width: 100%;
+
+    .projectContainer {
+      // border: 2px solid red;
+      width: 100%;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      position: relative;
+
+      .leftContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .description {
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .title {
+          font-size:24px;
+          font-weight: 700;
+          padding: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      .rightContainer {
+        width: 100%;
+        // border: 2px solid red;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        > .images {
+          height: fit-content;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          overflow: auto;
+          scrollbar-width: 0;
+
+          img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 0;
+    width: 100%;
+    min-width: 400px;
+
+    .projectContainer {
+      // border: 2px solid red;
+      width: 100%;
+      gap: 20px;
+      margin-bottom: 0;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      position: relative;
+
+      .leftContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .description {
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .title {
+          font-size:24px;
+          font-weight: 700;
+          padding: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      .rightContainer {
+        width: 100%;
+        // border: 2px solid red;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        > .images {
+          height: fit-content;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: auto;
+          scrollbar-width: 0;
+
+          img {
+            height: auto;
+            width: 80%;
+            object-fit: cover;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,728 @@
+@import "./global.scss";
+
+.popupLayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  .popUpBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70vw;
+    height: 80vh;
+    color: black;
+    overflow: auto;
+
+    .popupHeader {
+      display: flex;
+      justify-content: space-between;
+      // border: 2px solid red;
+      width: 100%;
+      align-items: flex-start;
+
+      ion-icon {
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 2px;
+      }
+
+      .popup-title {
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .popup-data {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      // border: 2px solid red;
+      overflow: hidden;
+
+      .left {
+        width: 40%;
+        height: 100%;
+        // border: 2px solid red;
+
+        .service-img-box {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5px;
+          // border: 2px solid red;
+
+          img {
+            width: 95%;
+            height: 100%;
+            // border: 2px solid red;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+        }
+      }
+      .right {
+        width: 60%;
+        height: 100%;
+        overflow-y: auto;
+        // border: 2px solid red;
+
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+          background-color: #f5f5f5;
+        }
+
+        .sub-title {
+          font-size: 18px;
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+        .description {
+          display: flex;
+          margin-bottom: 0;
+          font-size: 16px;
+
+          ion-icon {
+            margin-right: 5px;
+            padding-top: 3px;
+          }
+        }
+        .contact-btn {
+          padding: 5px 12px;
+          font-weight: 500;
+          display: block;
+          width: fit-content;
+          font-size: 14px;
+          border-radius: 5px;
+          margin-top: 10px;
+          background: black;
+          text-decoration: none;
+          color: white;
+          border: 2px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px;
+
+          ion-icon {
+            font-size: 18px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services-component {
+  background: rgba($color: #caebf5, $alpha: 1);
+  padding: 50px 0;
+  position: relative;
+
+  .wave {
+    position: absolute;
+    bottom: -55px;
+    z-index: 3;
+    width: 100%;
+  }
+
+  .service-title {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+  }
+
+  .services-container {
+    // border: 2px solid red;
+    margin: 50px 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 100px;
+    justify-content: center;
+    z-index: 5;
+
+    .service-card {
+      width: 320px;
+      position: relative;
+      border-radius: 5px;
+
+      .wp-contact {
+        // border: 2px solid red;
+        background-color: white;
+        padding: 5px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #000000;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+
+        ion-icon {
+          font-size: 24px;
+        }
+      }
+
+      .service-img-box {
+        border-radius: 5px;
+        overflow: hidden;
+
+        .img {
+          height: 400px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .service-detail {
+        background: white;
+        padding: 12px;
+        position: absolute;
+        bottom: -50px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .description {
+          font-size: 14px;
+          font-weight: 500;
+          margin: 0;
+          margin-top: 5px;
+        }
+
+        .learnmore {
+          background: #000000;
+          color: white;
+          border: none;
+          padding: 5px;
+          font-size: 12px;
+          margin-top: 5px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .popupLayer {
+    .popUpBox {
+      padding: 20px;
+      border-radius: 10px;
+      width: 90vw;
+      height: 80vh;
+
+      .popupHeader {
+        ion-icon {
+          font-size: 25px;
+          cursor: pointer;
+          // border: 2px solid red;
+        }
+
+        .popup-title {
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+      }
+
+      .popup-data {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        // border: 2px solid red;
+        overflow: hidden;
+
+        .left {
+          width: 40%;
+          height: 100%;
+          // border: 2px solid red;
+
+          .service-img-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            // border: 2px solid red;
+
+            img {
+              width: 95%;
+              height: 100%;
+              // border: 2px solid red;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+        }
+        .right {
+          width: 60%;
+          height: 100%;
+          overflow-y: auto;
+          // border: 2px solid red;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background-color: #f5f5f5;
+          }
+
+          .sub-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 5px;
+          }
+          .description {
+            display: flex;
+            margin-bottom: 0;
+            font-size: 16px;
+
+            ion-icon {
+              margin-right: 5px;
+              padding-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .services-component {
+    background: rgba($color: #caebf5, $alpha: 1);
+    padding: 20px 50px;
+    position: relative;
+    min-width: 400px;
+
+    .wave {
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+    }
+
+    .service-title {
+      font-size: 46px;
+      letter-spacing: 3px;
+    }
+
+    .services-container {
+      // border: 2px solid red;
+      margin: 0;
+      gap: 30px;
+      row-gap: 100px;
+      margin-bottom: 50px;
+      z-index: 5;
+
+      .service-card {
+        width: 260px;
+        position: relative;
+        border-radius: 5px;
+
+        .service-img-box {
+          border-radius: 5px;
+          overflow: hidden;
+
+          .img {
+            height: 360px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .service-detail {
+          padding: 8px;
+          bottom: -50px;
+
+          .title {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .description {
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 5px;
+          }
+
+          .learnmore {
+            background: #000000;
+            color: white;
+            border: none;
+            padding: 5px;
+            font-size: 11px;
+            margin-top: 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popupLayer {
+    .popUpBox {
+      padding: 20px;
+      border-radius: 10px;
+      width: 90vw;
+      height: 80vh;
+
+      .popupHeader {
+        ion-icon {
+          font-size: 22px;
+          cursor: pointer;
+          // border: 2px solid red;
+        }
+
+        .popup-title {
+          font-size: 20px;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+
+      .popup-data {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        // border: 2px solid red;
+        overflow-y: auto;
+        gap: 20px;
+
+        .left {
+          width: 100%;
+          height: 280px;
+          // border: 2px solid red;
+
+          .service-img-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+
+            img {
+              height: 100%;
+              width: 240px;
+              // border: 2px solid red;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+        }
+        .right {
+          width: 100%;
+          height: 100%;
+          overflow: unset;
+          // border: 2px solid red;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background-color: #f5f5f5;
+          }
+
+          .sub-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 5px;
+          }
+          .description {
+            display: flex;
+            margin-bottom: 0;
+            font-size: 14px;
+
+            ion-icon {
+              margin-right: 5px;
+              padding-top: 3px;
+            }
+          }
+
+          .contact-btn {
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-left: 15px;
+
+            ion-icon {
+              font-size: 14px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .services-component {
+    background: rgba($color: #caebf5, $alpha: 1);
+    padding: 20px;
+    position: relative;
+    min-width: 400px;
+    // border: 2px solid red;
+
+    .wave {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+    }
+
+    .service-title {
+      font-size: 42px;
+      letter-spacing: 3px;
+    }
+
+    .services-container {
+      // border: 2px solid red;
+      margin: 0;
+      gap: 20px;
+      row-gap: 80px;
+      margin-bottom: 50px;
+      z-index: 5;
+
+      .service-card {
+        width: 250px;
+        position: relative;
+        border-radius: 5px;
+
+        .service-img-box {
+          border-radius: 5px;
+          overflow: hidden;
+
+          .img {
+            height: 320px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .service-detail {
+          padding: 8px;
+          bottom: -50px;
+
+          .title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .description {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 5px;
+          }
+
+          .learnmore {
+            background: #000000;
+            color: white;
+            border: none;
+            padding: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .popupLayer {
+    min-width: 400px;
+    .popUpBox {
+      padding: 20px;
+      border-radius: 10px;
+      width: 90vw;
+      height: 60vh;
+
+      .popupHeader {
+        ion-icon {
+          font-size: 22px;
+          cursor: pointer;
+          // border: 2px solid red;
+        }
+
+        .popup-title {
+          font-size: 18px;
+          -width: 280px;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+
+      .popup-data {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        // border: 2px solid red;
+        overflow-y: auto;
+        gap: 20px;
+
+        .left {
+          width: 100%;
+          height: 280px;
+          // border: 2px solid red;
+
+          .service-img-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+
+            img {
+              height: 100%;
+              width: 240px;
+              // border: 2px solid red;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+        }
+        .right {
+          width: 100%;
+          height: 100%;
+          overflow: unset;
+          // border: 2px solid red;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background-color: #f5f5f5;
+          }
+
+          .sub-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 5px;
+          }
+          .description {
+            display: flex;
+            margin-bottom: 0;
+            font-size: 14px;
+
+            ion-icon {
+              margin-right: 5px;
+              padding-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .services-component {
+    background: rgba($color: #caebf5, $alpha: 1);
+    padding: 20px;
+    position: relative;
+    min-width: 400px;
+
+    .wave {
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+    }
+
+    .service-title {
+      font-size: 32px;
+      letter-spacing: 3px;
+      margin: 10px 0;
+    }
+
+    .services-container {
+      // border: 2px solid red;
+      margin: 0;
+      gap: 20px;
+      row-gap: 80px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      z-index: 5;
+
+      .service-card {
+        width: 300px;
+        position: relative;
+        border-radius: 5px;
+
+        .service-img-box {
+          border-radius: 5px;
+          overflow: hidden;
+
+          .img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .service-detail {
+          padding: 8px;
+          bottom: -50px;
+
+          .title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          .description {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 5px;
+          }
+
+          .learnmore {
+            background: #000000;
+            color: white;
+            border: none;
+            padding: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}

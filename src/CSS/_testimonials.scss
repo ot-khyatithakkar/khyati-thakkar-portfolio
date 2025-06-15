@@ -1,0 +1,270 @@
+@import "./global.scss";
+
+.testimonial-component {
+  // border: 2px solid red;
+  background: rgba($color: #ffffff, $alpha: 1);
+  padding: 50px 0;
+  position: relative;
+  padding-top: 120px;
+  color: black;
+
+  .wave {
+    position: absolute;
+    bottom: -75px;
+    width: 100%;
+  }
+
+  .testimonial-title {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+  }
+
+  .carouselSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .carousel-control-next {
+      color: red;
+    }
+
+    .title {
+      font-size: 30px;
+      text-align: left;
+      width: 70%;
+      // border: 2px solid red;
+    }
+
+    .author {
+      font-size: 16px;
+      text-align: right;
+      width: 70%;
+      // border: 2px solid red;
+    }
+
+    .description {
+      width: 70%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: #dfb25a; /* Replace with your desired color */
+      background-image: none; /* Remove the default arrow image */
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      content: "‹"; /* Replace with your desired arrow symbol */
+      color: #dfb25a; /* Replace with your desired color */
+      font-size: 30px; /* Adjust size as needed */
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonial-component {
+    // border: 2px solid red;
+    background: rgba($color: #ffffff, $alpha: 1);
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px;
+    color: black;
+
+    .wave {
+      position: absolute;
+      bottom: -75px;
+      width: 100%;
+    }
+
+    .testimonial-title {
+      font-size: 46px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-align: center;
+      font-family: "Tangerine", cursive;
+    }
+
+    .carouselSlide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .carousel-control-next {
+        color: red;
+      }
+
+      .title {
+        font-size: 22px;
+        text-align: left;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .author {
+        font-size: 16px;
+        text-align: right;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .description {
+        width: 70%;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #dfb25a; /* Replace with your desired color */
+        background-image: none; /* Remove the default arrow image */
+      }
+
+      .carousel-control-prev::after,
+      .carousel-control-next::after {
+        content: "‹"; /* Replace with your desired arrow symbol */
+        color: #dfb25a; /* Replace with your desired color */
+        font-size: 30px; /* Adjust size as needed */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .testimonial-component {
+    // border: 2px solid red;
+    background: rgba($color: #ffffff, $alpha: 1);
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px;
+    color: black;
+
+    .wave {
+      position: absolute;
+      bottom: -75px;
+      width: 100%;
+    }
+
+    .testimonial-title {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-align: center;
+      font-family: "Tangerine", cursive;
+    }
+
+    .carouselSlide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .carousel-control-next {
+        color: red;
+      }
+
+      .title {
+        font-size: 22px;
+        text-align: left;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .author {
+        font-size: 16px;
+        text-align: right;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .description {
+        width: 70%;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #dfb25a; /* Replace with your desired color */
+        background-image: none; /* Remove the default arrow image */
+      }
+
+      .carousel-control-prev::after,
+      .carousel-control-next::after {
+        content: "‹"; /* Replace with your desired arrow symbol */
+        color: #dfb25a; /* Replace with your desired color */
+        font-size: 30px; /* Adjust size as needed */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .testimonial-component {
+    // border: 2px solid red;
+    background: rgba($color: #ffffff, $alpha: 1);
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px;
+    color: black;
+    min-width: 400px;
+
+    .wave {
+      position: absolute;
+      bottom: -75px;
+      width: 100%;
+    }
+
+    .testimonial-title {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-align: center;
+      font-family: "Tangerine", cursive;
+    }
+
+    .carouselSlide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: -20px;
+
+      .carousel-control-next {
+        color: red;
+      }
+
+      .title {
+        font-size:18px;
+        text-align: left;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .author {
+        font-size: 12px;
+        text-align: right;
+        width: 70%;
+        // border: 2px solid red;
+      }
+
+      .description {
+        width: 70%;
+        font-size: 14px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #dfb25a; /* Replace with your desired color */
+        background-image: none; /* Remove the default arrow image */
+      }
+
+      .carousel-control-prev::after,
+      .carousel-control-next::after {
+        content: "‹"; /* Replace with your desired arrow symbol */
+        color: #dfb25a; /* Replace with your desired color */
+        font-size: 30px; /* Adjust size as needed */
+      }
+    }
+  }
+}
