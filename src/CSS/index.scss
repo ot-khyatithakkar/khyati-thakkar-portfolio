@@ -32,7 +32,7 @@
   background-color: #000000;
 }
 
-button {
+.appointment {
   padding: 8px 30px;
   background-color: black;
   border: 2px solid black;
@@ -47,16 +47,6 @@ button {
   white-space: nowrap;
   gap: 5px;
 
-  &.btn-secondary {
-    background-color: black;
-    color: white;
-  }
-
-  ion-icon {
-    font-size: 20px;
-    margin-left: 5px;
-  }
-
   &:hover {
     background-color: white;
     color: black;
@@ -64,22 +54,17 @@ button {
 }
 
 @media screen and (max-width: 1000px) {
-  button {
+  .appointment {
     padding: 5px 15px;
     font-size: 12px;
     gap: 5px;
     height: fit-content;
     width: fit-content;
-
-    ion-icon {
-      font-size: 16px;
-      margin-left: 0;
-    }
   }
 }
 
 @media screen and (max-width: 700px) {
-  button {
+  .appointment {
     padding: 3px 8px;
     font-size: 10px;
     gap: 5px;

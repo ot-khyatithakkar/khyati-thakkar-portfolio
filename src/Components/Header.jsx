@@ -15,7 +15,7 @@ const Header = () => {
                 <p className="slogan">
                     by Dr. Khyati Thakkar
                 </p>
-                <button onClick={() => { window.open(`https://wa.me/${mobileNumber}`, "_blank"); }} className="learnmore">
+                <button onClick={() => { window.open(`https://wa.me/${mobileNumber}`, "_blank"); }} className="appointment">
                     Book Appointment
                 </button>
             </div>
